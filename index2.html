@@ -33,35 +33,36 @@
       align-items: center;
       margin-top: 30px;
       gap: 120px;
+      flex-wrap: wrap; /* Ayuda en pantallas pequeñas */
     }
 
     .image-container .image {
       max-width: 90%;
-      width: 400px;
+      width: 100%;
       height: auto;
       border-radius: 20px;
       box-shadow: 0 0 10px #000;
     }
 
     .left {
-      margin-right: 20px; /* Imagen a la izquierda */
+      margin-right: 20px;
     }
 
     .right {
-      margin-left: 20px; /* Imagen a la derecha */
+      margin-left: 20px;
     }
-  
-     @media (max-width: 768px) {
-    .image-container {
-      flex-direction: column;
-      gap: 30px;
+
+    @media (max-width: 768px) {
+      .image-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .left,
+      .right {
+        margin: 0;
+      }
     }
-  
-    .left,
-    .right {
-      margin: 0;
-    }
-  }
   </style>
 </head>
 <body>
