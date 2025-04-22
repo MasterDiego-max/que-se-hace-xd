@@ -36,7 +36,9 @@
     }
 
     .image-container .image {
+      max-width: 90%;
       width: 400px;
+      height: auto;
       border-radius: 20px;
       box-shadow: 0 0 10px #000;
     }
@@ -48,7 +50,18 @@
     .right {
       margin-left: 20px; /* Imagen a la derecha */
     }
-
+  
+     @media (max-width: 768px) {
+    .image-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .left,
+    .right {
+      margin: 0;
+    }
+  }
   </style>
 </head>
 <body>
